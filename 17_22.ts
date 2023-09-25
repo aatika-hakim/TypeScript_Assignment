@@ -91,10 +91,19 @@ console.log(`I am inviting ${guestList.length} to dinner.`)
 console.log("\n\n Question 20\n");
 /* Think of something you could store in a array. For example, you could make a list of mountains, rivers, countries, cities, languages, or anything else you’d like. Write a program that creates a list containing these items. */
 
-let languages: string[] = ["Urdu", "English","Arabic","Persian","German"];
+let languages: string[] = [];
+
+languages.push("Urdu")
+languages.push("Arabic")
+languages.push("English")
+languages.push("Persian")
+languages.push("Chinese")
+languages.push("German")
+
 console.log("List of Languages: ")
 for (let i = 0; i < languages.length; i++) {
     console.log(languages[i]);
 }
 
 console.log("\n\n Question 21\n");
+/* They think of something you could store in a TypeScript Object. Write a program that creates Objects containing these items. */
