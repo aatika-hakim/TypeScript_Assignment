@@ -111,7 +111,7 @@ console.log(guestList);
 
 // iAdd three new guests to the list
 guestList.push("Farwa","Safia","Hira");
-console.log(`New Guest List : ${guestList}`);
+console.log(`New Guest List : ${guestList}\n`);
 
 //Inform guests that you found a bigger dinner table. So, you are inviting more guests.
 console.log(`Hello, I have found a bigger dinning table so I planned to invite some more guests for the party.`);
