@@ -1,6 +1,7 @@
 "use strict";
 // Question 11
 // Store the names of a few of your friends in a array called names. Print each name by accessing each element in the list, one at a time.
+Object.defineProperty(exports, "__esModule", { value: true });
 let names = ["Alia", "Maryam", "Fatima", "Ayesha", "Zenab"];
 let i = 0;
 while (i < names.length) {
@@ -34,22 +35,17 @@ function sendInvitation(guest) {
     console.log(`Dear ${guest}, You are invited to a dinner on Sunday at my home.`);
 }
 guestList.forEach(sendInvitation);
-console.log("\n\n Question 15");
-// Question 15
-// You just heard that one of your guests can’t make the dinner, so you need to send out a new set of invitations. You’ll have to think of someone else to invite.
-const newGuest = "Maryam"; // New invitee
-let guestWhoCantMakeIt = guestList.pop();
-guestList.push(newGuest);
-guestList.forEach(guest => {
-    console.log(`Dear ${guest},You are invited to a dinner at my home.`);
-});
-console.log("\n\n Question 15(a)");
-// 15(a)
-console.log(guestWhoCantMakeIt);
-// guestList.forEach((guest) => {
-//   if (guest !== guestWhoCantMakeIt) {
-//     sendInvitation(guest);
-//   }
-// });
-console.log(`Unfortunately, ${guestWhoCantMakeIt} can't make it to the dinner.`);
-console.log("\n\n Question 15(b)");
+/* Question 15
+ You just heard that one of your guests can’t make the dinner, so you need to send out a new set of invitations.
+ You’ll have to think of someone else to invite. */
+console.log('\n\nQuestion 15(a)\n');
+console.log(guestList);
+// New Guest List
+let index = guestList.indexOf('Ali');
+const GuestWhoCantMakeIt = guestList.splice(index, 1);
+console.log(`New Guest List : ${guestList}`);
+let inviteMessage = 'I would like to invite you to dinner on Sunday at my home. Thank you.';
+for (let i = 0; i < guestList.length; i++) {
+    console.log(`Hello ${guestList[i]}, ${inviteMessage}`);
+}
+console.log('\n\nQuestion 15(b)\n');

@@ -45,29 +45,34 @@ function sendInvitation(guest: string) {
 }
 
 guestList.forEach(sendInvitation);
-console.log("\n\n Question 15")
-
-// Question 15
-// You just heard that one of your guests can’t make the dinner, so you need to send out a new set of invitations. You’ll have to think of someone else to invite.
 
 
-const newGuest = "Maryam"; // New invitee
+/* Question 15
+ You just heard that one of your guests can’t make the dinner, so you need to send out a new set of invitations.
+ You’ll have to think of someone else to invite. */
 
-let guestWhoCantMakeIt = guestList.pop();
+console.log('\n\nQuestion 15(a)\n');
 
-guestList.push(newGuest);
+console.log(guestList);
 
-guestList.forEach(guest => {
-  console.log(`Dear ${guest},You are invited to a dinner at my home.`);
-});
+// New Guest List
+let index = guestList.indexOf('Ali');
+const GuestWhoCantMakeIt = guestList.splice(index, 1);
+
+console.log(`New Guest List : ${guestList}`);
+let inviteMessage = 'I would like to invite you to dinner on Sunday at my home. Thank you.';
+for(let i =0; i < guestList.length; i++){
+    console.log(`Hello ${guestList[i]}, ${inviteMessage}`);
+}
+
+console.log('\n\nQuestion 15(b)\n');
 
 
-// Question 15(a)
-console.log("\n\n Question 15(a)")
-console.log(`Unfortunately, ${guestWhoCantMakeIt} can't make it to the dinner.`);
 
-// Question 15(b)
-console.log("\n\n Question 15(b)")
+
+
+
+export{};
 
 
 
