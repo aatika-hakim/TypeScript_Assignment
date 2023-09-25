@@ -39,28 +39,38 @@ console.log("\nGuest List: ", guestList);
 console.log("\n\nQuestion 18");
 /* Question 18
 Seeing the World: Think of at least five places in the world you’d like to visit.
-Store the locations in a array. Make sure the array is not in alphabetical order.
+Store the locations in a array. Make sure the array is not in alphabetical Order.
 */
 let places = ["Turkey", "Pakistan", "Paris", "Egypt", "Los Angeles"];
-// Print the array in its original order
-console.log("Original order:", places);
-// Print the array in alphabetical order without modifying the actual list
-console.log("Alphabetical order:", [...places].sort());
-// Show that the original array is still in its original order
-console.log("Original order after sorting:", places);
-// Print the array in reverse alphabetical order without changing the order of the original list
-console.log("Reverse alphabetical order:", [...places].sort().reverse());
-// Show that the original array is still in its original order
-console.log("Original order after reverse sorting:", places);
-// Reverse the order of the list
+// Print your array in its original order
+console.log("Array in Original Order:", places);
+//  Print your array in alphabetical order without modifying the actual list.
+console.log("Array in Alphabetical Order:", [...places].sort());
+// Show that the original array is still in its original Order
+console.log("Array in Original Order after sorting:", places);
+// Print your array in reverse alphabetical order without changing the order of the original list
+console.log("Reverse alphabetical Order:", [...places].sort().reverse());
+// Show that your array is still in its original order by printing it again.
+console.log("Array in Original Order after reverse sorting:", places);
+// Reverse the order of your list. Print the array to show that its order has changed.
 places.reverse();
-console.log("Reversed order:", places);
-// Reverse the order of the list again to get back to the original order
+console.log("Reversed Order:", places);
+// Reverse the order of your list again. Print the list to show it’s back to its original order.
 places.reverse();
-console.log("Original order after double reverse:", places);
-// Sort the array in alphabetical order
+console.log("Array in Original Order after double reverse:", places);
+// Sort your array so it’s stored in alphabetical order. Print the array to show that its order has been changed.
 places.sort();
-console.log("Alphabetical order after sorting:", places);
-// Sort the array in reverse alphabetical order
+console.log("Array in Alphabetical Order after sorting:", places);
+// Sort to change your array so it’s stored in reverse alphabetical order. Print the list to show that its order has changed.
 places.reverse();
-console.log("Reverse alphabetical order after sorting:", places);
+console.log("Reverse alphabetical Order after sorting:", places);
+console.log("\n\n Question 19\n");
+/* Dinner Guests: Working with one of the programs from Exercises 17, print a message indicating the number of people you are inviting to dinner. */
+console.log(`I am inviting ${guestList.length} to dinner.`);
+console.log("\n\n Question 20\n");
+/* Think of something you could store in a array. For example, you could make a list of mountains, rivers, countries, cities, languages, or anything else you’d like. Write a program that creates a list containing these items. */
+let languages = ["Urdu", "English", "Arabic", "Persian", "German"];
+console.log("List of Languages: ");
+for (let i = 0; i < languages.length; i++) {
+    console.log(languages[i]);
+}
