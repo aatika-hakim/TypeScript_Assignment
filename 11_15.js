@@ -2,7 +2,7 @@
 // Question 11
 // Store the names of a few of your friends in a array called names. Print each name by accessing each element in the list, one at a time.
 Object.defineProperty(exports, "__esModule", { value: true });
-let names = ["Alia", "Maryam", "Fatima", "Ayesha", "Zenab"];
+let names = ["Alia", "Jamil", "Fatima", "Farooq", "Sadia", "Ali"];
 let i = 0;
 while (i < names.length) {
     let element = names[i];
@@ -62,7 +62,17 @@ console.log('\n\nQuestion 15(c)\n');
 /*
 Modify your list, replacing the name of the guest who can’t make it with the name of the new person you are inviting.
 */
+console.log(`Old Guest List: ${guestList}`);
 //New Guest List
 let index1 = guestList.indexOf('Faria');
 var guestCantMakeIt = guestList.splice(index1, 1, "Zenab");
-console.log(`New Guest List : ${[[guestList]]}`);
+console.log(`New Guest List : ${guestList}`);
+console.log('\n\nQuestion 15(d)\n');
+/*
+Print a second invitations, one for each person who is still in your list.
+*/
+console.log(guestList);
+let secInvitation = 'I would like to invite you to a dinner party at my home on Sunday.';
+for (let i = 0; i < guestList.length; i++) {
+    console.log(`Hello! ${guestList[i]}, ${secInvitation}`);
+}

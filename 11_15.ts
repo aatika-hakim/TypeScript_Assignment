@@ -80,14 +80,25 @@ console.log('\n\nQuestion 15(c)\n');
 /* 
 Modify your list, replacing the name of the guest who can’t make it with the name of the new person you are inviting.
 */
+
+console.log(`Old Guest List: ${guestList}`)
 //New Guest List
 let index1 = guestList.indexOf('Faria');
 var guestCantMakeIt = guestList.splice(index1, 1 , "Zenab");
 
 console.log(`New Guest List : ${guestList}`);
 
+console.log('\n\nQuestion 15(d)\n');
+/* 
+Print a second invitations, one for each person who is still in your list.
+*/
 
+console.log(guestList);
 
+let secInvitation = 'I would like to invite you to a dinner party at my home on Sunday.';
+for(let i =0; i < guestList.length; i++){
+    console.log(`Hello! ${guestList[i]}, ${secInvitation}`)
+}
 
 export{};
 
