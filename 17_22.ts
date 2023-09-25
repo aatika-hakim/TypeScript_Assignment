@@ -119,5 +119,17 @@ let patient: object = {
 
 console.log(patient);
 
+console.log("\n\n Question 22\n");
+/* Intentional Error: If you haven’t received an array index error in one of your programs yet, try to make one happen. Change an index in one of your programs to produce an index error. Make sure you correct the error before closing the program. */
+// from problem 20
+console.log("List of Languages: ")
+console.log(languages);
 
+console.log("Error:", languages[6]) // undefined error
+
+if(languages[6] === undefined){
+    languages.push("Turkish");
+}
+console.log("New List of Languages: ");
+console.log(languages);
 
