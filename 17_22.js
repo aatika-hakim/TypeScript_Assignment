@@ -40,6 +40,6 @@ for (let j = 0; j <= guestList.length; j++){
     let remainingGuest = guestList.pop();
     console.log("Removed last two names from the list: ", remainingGuest)
 }
-console.log("\n\n Guest List: ", guestList);
+console.log("\nGuest List: ", guestList);
 
 
