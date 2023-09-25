@@ -27,13 +27,17 @@ while (y < transport.length) {
     console.log("I like most to travel on" + " " + modes + ".");
     y++;
 }
+/*
+Question 14
+ Make a list that includes at least three people you’d like to invite to dinner.
+Then use your list to print a message to each person, inviting them to dinner.
+*/
 console.log("\n\n Question 14");
-// Question 14
-// Make a list that includes at least three people you’d like to invite to dinner. Then use your list to print a message to each person, inviting them to dinner.
-let guestList = ["ALi", "Ayesha", "Faria"];
-function sendInvitation(guest) {
-    console.log(`Dear ${guest}, You are invited to a dinner on Sunday at my home.`);
-}
+let guestList = ["ALi", "Ayesha", "Faria", "Maryam", "Fatima", "Rabia"];
+let invitations = " You are invited to a dinner on Sunday at my home.";
+const sendInvitation = (guest) => {
+    console.log(`Hello ${guest}!, ${invitations}`);
+};
 guestList.forEach(sendInvitation);
 /* Question 15
  You just heard that one of your guests can’t make the dinner, so you need to send out a new set of invitations.
@@ -41,11 +45,24 @@ guestList.forEach(sendInvitation);
 console.log('\n\nQuestion 15(a)\n');
 console.log(guestList);
 // New Guest List
-let index = guestList.indexOf('Ali');
-const GuestWhoCantMakeIt = guestList.splice(index, 1);
+let index = guestList.indexOf('Faria');
+var guestCantMakeIt = guestList.splice(index, 1);
 console.log(`New Guest List : ${guestList}`);
-let inviteMessage = 'I would like to invite you to dinner on Sunday at my home. Thank you.';
+let inviteMessage = 'I would like to invite you to dinner on Sunday.';
 for (let i = 0; i < guestList.length; i++) {
-    console.log(`Hello ${guestList[i]}, ${inviteMessage}`);
+    console.log(`Hello!! ${guestList[i]}, ${inviteMessage}`);
 }
 console.log('\n\nQuestion 15(b)\n');
+/*
+Start with your program from Exercise 14.
+Add a print statement at the end of your program stating the name of the guest who can’t make it.
+ */
+console.log(`${guestCantMakeIt} can't come for dinner`);
+console.log('\n\nQuestion 15(c)\n');
+/*
+Modify your list, replacing the name of the guest who can’t make it with the name of the new person you are inviting.
+*/
+//New Guest List
+let index1 = guestList.indexOf('Faria');
+var guestCantMakeIt = guestList.splice(index1, 1, "Zenab");
+console.log(`New Guest List : ${[[guestList]]}`);
