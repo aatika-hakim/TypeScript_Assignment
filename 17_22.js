@@ -73,9 +73,21 @@ let languages = [];
 languages.push("Urdu");
 languages.push("Arabic");
 languages.push("English");
+languages.push("Persian");
+languages.push("Chinese");
+languages.push("German");
 console.log("List of Languages: ");
 for (let i = 0; i < languages.length; i++) {
     console.log(languages[i]);
 }
 console.log("\n\n Question 21\n");
-/* They think of something you could store in a TypeScript Object. Write a program that creates Objects containing these items. */ 
+/* Think of something you could store in a TypeScript Object. Write a program that creates Objects containing these items. */
+let patient = {
+    Name: "Ali",
+    Age: "30",
+    Gender: "Male",
+    Disease: "Blood Cancer",
+    Blood_type: "A",
+    Doctor: "Faris"
+};
+console.log(patient);

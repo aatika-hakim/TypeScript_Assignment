@@ -106,4 +106,18 @@ for (let i = 0; i < languages.length; i++) {
 }
 
 console.log("\n\n Question 21\n");
-/* They think of something you could store in a TypeScript Object. Write a program that creates Objects containing these items. */
+/* Think of something you could store in a TypeScript Object. Write a program that creates Objects containing these items. */
+
+let patient: object = {
+    Name: "Ali",
+    Age:"30",
+    Gender:"Male",
+    Disease: "Blood Cancer",
+    Blood_type:"A",
+    Doctor: "Faris"
+}
+
+console.log(patient);
+
+
+
