@@ -35,8 +35,6 @@ else if (alienColor == "red") {
     console.log("You just earned 15 points")
 }
 //  Write three versions of this program, making sure each message is printed for the appropriate color alien.
-
-
 let alienColor1: string = "green";
 
 if (alienColor1 == "green") {
@@ -47,7 +45,6 @@ if (alienColor1 == "green") {
     console.log("The player earned 15 points.");
 }
 
-
 let alienColor2: string = "yellow";
 
 if (alienColor2 == "green") {
@@ -57,7 +54,6 @@ if (alienColor2 == "green") {
 } else if (alienColor2 == "red") {
     console.log("The player earned 15 points.");
 }
-
 
 let alienColor3: string = "red";
 
@@ -104,18 +100,18 @@ Write five if statements. Each should check whether a certain kind of fruit is i
 */
 
 const favorite_fruits = ["Apple", "Banana", "Mango"]
-if(favorite_fruits.includes("Banana")){
+if (favorite_fruits.includes("Banana")) {
     console.log("You really like Banana!");
 }
-if(favorite_fruits.includes("Mango")){
+if (favorite_fruits.includes("Mango")) {
     console.log("I like Mangoes!");
 }
-if(favorite_fruits.includes("Apple")){
+if (favorite_fruits.includes("Apple")) {
     console.log("You really like Apple!");
 }
-if(favorite_fruits.includes("Orange")){
+if (favorite_fruits.includes("Orange")) {
     console.log("You really like Oranges!");
 }
-if(favorite_fruits.includes("Grape")){
+if (favorite_fruits.includes("Grape")) {
     console.log("I like Grapes!");
 }
