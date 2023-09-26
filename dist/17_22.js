@@ -1,4 +1,5 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 console.log("Question 17(a)");
 /*
 Shrinking Guest List:
@@ -96,7 +97,7 @@ console.log("\n\n Question 22\n");
 // from problem 20
 console.log("List of Languages: ");
 console.log(languages);
-console.log("Error", languages[6]); // undefined error
+console.log("Error:", languages[6]); // undefined error
 if (languages[6] === undefined) {
     languages.push("Turkish");
 }
